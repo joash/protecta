@@ -1,0 +1,212 @@
+<!-- Carousel
+is a slideshow for cycling through a series of content, built with CSS 3D transforms and a bit of JavaScript. It works with a series of images, text, or custom markup. It also includes support for previous/next controls and indicators.
+================================================================================== -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- carousel-indicators 
+  these are the little dots at the bottom of each slide, which indicates how many slides there are in the carousel, and which slide the user is currently    viewing -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+  <div class="carousel-inner">
+    <!-- carousel-inner
+    add slides to the carousel -->
+    <div class="item active">
+      <img src="images/bg1.jpg" alt="1">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1 class="fit-head">What are the protection trends?</h1>
+          <p class="fit-text">Use the interactive map to identify trends of protection concerns, at district level, from the protection monitoring system.</p>
+          <p>
+            <a class="btn btn-lg btn-primary" onclick="$('li:eq(1) a').tab('show');" role="button">Protection monitoring &raquo;</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/bg2.jpg" alt="2">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1 class="fit-head">How disability-inclusive are we?</h1>
+          <p class="fit-text">What is the evidence from protection programming that community engagement activities are inclusive of persons with
+          difficulties in seeing, hearing, walking, selfcare, and mental abilities?</p>
+          <a class="btn btn-lg btn-primary" onclick="$('li:eq(2) a').tab('show');" role="button">Disability inclusion &raquo;</a>
+          <!-- 
+          <p>
+            <form>
+              <div class="form-group">
+                <input id="addr1" type="text" class="form-control" placeholder="Search now...">
+                <input id="addr2" type="text" class="form-control" placeholder="Search now...">
+              </div>
+            </form>
+          </p> 
+          -->
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/bg4.jpg" alt="3">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1 class="fit-head">Sexual exploitation &amp; abuse</h1>
+          <p class="fit-text">It is our mandate to stop and prevent sexual exploitation and abuse from happening during our humanitarian interventions.</p>
+          <p>
+            <a class="btn btn-lg btn-primary" onclick="$('li:eq(1) a').tab('show');" role="button">PSEA in interventions &raquo;</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/bg2.jpg" alt="4">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1 class="fit-head">How are minority groups represented?</h1>
+          <p class="fit-text">What data do we have on minority groups in our humanitarian interventions?</p>
+          <a class="btn btn-lg btn-primary" onclick="$('li:eq(2) a').tab('show');" role="button">Minority inclusion &raquo;</a>
+          <!-- 
+          <p>
+            <form>
+              <div class="form-group">
+                <input id="addr1" type="text" class="form-control" placeholder="Search now...">
+                <input id="addr2" type="text" class="form-control" placeholder="Search now...">
+              </div>
+            </form>
+          </p> 
+          -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+</div>
+<!-- /.carousel -->
+
+<!-- add four columns of text below the carousel -->
+<div class="container marketing">
+  <!--
+  <div class="row">
+  <div class="container">
+    <h1 class="text-center fit-h1" style="font-size: 4em; margin-bottom: 30px;">Information Management areas </h1>
+  </div>
+  </div>
+  -->
+  <div class="row app-links">
+    <div class="col-md-3">
+      <img src="images/novice-01.png" width="50%" alt="novice">
+      <h2>Protection monitoring</h2>
+      <p>
+      What is the evidence from protection programming that community engagement activities are inclusive?
+      </p>
+      <a class="btn btn-primary" onclick="$('li:eq(1) a').tab('show');" role="button">Check out trends &raquo;</a>
+    </div><!-- /END col-md-3 -->
+    <div class="col-md-3">
+      <img src="images/veteran-01.png" width="50%" alt="veteran">
+      <h2>Disabilty inclusion</h2>
+      <p>
+      What is the evidence from protection programming that community engagement activities are inclusive?
+      </p>
+      <a class="btn btn-primary" onclick="$('li:eq(1) a').tab('show');" role="button">Disability inclusive KIs &raquo;</a>
+    </div><!-- /END.col-md-3 -->
+    <div class="col-md-3">
+      <img src="images/evaluator-01.png" width="50%" alt="evaluator">
+      <h2>Sexual exploitation</h2>
+      <p>
+      What is the evidence from protection programming that community engagement activities are inclusive?
+      </p>
+      <a class="btn btn-primary" onclick="$('li:eq(3) a').tab('show');" role="button">PSEA Issues &amp; responses &raquo;</a>
+    </div> <!-- /END.col-md-3 -->
+    <div class="col-md-3">
+      <img src="images/evaluator-01.png" width="50%" alt="evaluator">
+      <h2>Minority groups</h2>
+      <p>
+      What is the evidence from protection programming that community engagement activities are inclusive?
+      </p>
+      <a class="btn btn-primary" onclick="$('li:eq(3) a').tab('show');" role="button">Minority group concerns &raquo;</a>
+  </div> <!-- /END col-md-3 -->
+  </div> <!-- /END "row app-links"-->
+
+
+  <!-- START THE FEATURETTES -->
+  <!--
+  <hr class="featurette-divider">
+
+  <div class="row featurette center-on-xs">
+    <div class="col-md-5 col-md-push-7">
+      <img class="featurette-image img-responsive" src="images/data.jpg" alt = "">
+    </div>
+    
+    <div class="col-md-7 col-md-pull-5">
+      <h2 class="featurette-heading">Title.<br>
+        <span class="text-muted">Tesxt</span></h2>
+      <p class="lead">
+        Bla bla bla  
+        <a data-toggle="collapse" data-parent="#accordionOne" href="#collapseOne">Read more&hellip;</a>
+      </p>
+      
+      <div class="panel-group transparent-panel-group" id="accordionOne">
+        <div class="panel panel-default">
+          <div id="collapseOne" class="panel-collapse collapse">
+            
+            <div class="panel-body text-left">
+              <blockquote class="blockquote">
+                &ldquo;bla bla bla
+                </p>
+            </div> 
+          </div> 
+        </div> 
+      </div>
+    </div> 
+  </div> 
+  -->
+  
+  <hr class="featurette-divider">
+  
+  <div class="row featurette center-on-xs">
+    <div class="col-md-5">
+      <img class="featurette-image img-responsive" src="images/analysis.png" alt = "">
+    </div>
+    <div class="col-md-7">
+      <h2 class="featurette-heading">
+        We <i class="fa fa-heart" style="color:#bf2604;"></i> Data &amp; R.<br><span class="text-muted">We really, really do</span>
+      </h2>
+    <p class="lead">
+      IM teams aggregate data from different systems and analyze billions of data points so that as a decision maker you don&rsquo;t have to! IM teams
+      aggregate data from different systems and analyze billions of data points.aggregate data from different systems and analyze billions of data points
+      <a data-toggle="collapse" data-parent="#accordionTwo" href="#collapseTwo">Read more&hellip;</a></p>
+      <div class="panel-group transparent-panel-group" id="accordionTwo">
+        <div class="panel panel-default">
+          <div id="collapseTwo" class="panel-collapse collapse">
+            <div class="panel-body text-left">
+              <p>Most program managers still prefer to use Microsoft Excel to analyze data and make decisions. In protection programming, much of 
+              incident-based data is highly confidential and cannot be shared without informed consent and a data protection policy detailing the scope. 
+              The Somalia protection monitoring system however is not an incident-based system but a community recall of occurrence of specific 
+              protection concerns. It aggregates these responses into a <em>%</em> and shows <em>trends</em>. There are different sections:
+              </p>
+              <ul>
+                <li><em>Trends</em> show how a community recalls the occurrence of protection concerns over time</li>
+                <li><em>Prevalence</em> indicates how often such violations of these protection concerns happens</li>
+                <li><em>Most affected groups</em> shows the most affected persons in the community</li>
+                <li><em>Connectors and dividers</em> shows people who assist communities while dividers show spoilers</li>
+              </ul>
+              <p>A plethora of data were acquired and analyzed to create the Intelligentsia model. Among those data sets are:</p>
+              <ul>
+                <li>Retail environment data: Yelp ratings</li>
+                <li>Transportation data: NYC TLC taxicab trips, NYC Subway network and stations, residents&rsquo; travel time to work</li>
+                <li>Quality of life: Number and location of trees (NYC Open Data), Crime complaints (NYPD)</li>
+                <li>Online data: Edits of Wikipedia neighborhood articles, Google Search Trends</li>
+                <li>Housing: Median home value, gross rent, year structure built (Zillow, ACS/Census)</li>
+                <li>Demographics: Median income, age, education, poverty, employment (ACS/Census)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div> <!-- /END "container marketing" -->
+
