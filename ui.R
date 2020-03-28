@@ -29,18 +29,12 @@ shinyUI(navbarPage(title = "Protecta",
                    
                    # ----------------------------------
                    # tab panel 1 - Home
-                   tabPanel("Home",
-                            includeHTML("home.html"),
+                   tabPanel("Home", includeHTML("home.html"),
                             tags$script(src = "plugins/scripts.js"),
                             tags$head(
-                              tags$link(rel = "stylesheet", 
-                                        type = "text/css", 
-                                        href = "plugins/font-awesome-4.7.0/css/font-awesome.min.css"),
-                              tags$link(rel = "icon", 
-                                        type = "image/png", 
-                                        href = "images/logo_icon.png")
-                            )
-                   ),
+                              tags$link(rel = "stylesheet", type = "text/css", href = "plugins/font-awesome-4.7.0/css/font-awesome.min.css"),
+                              tags$link(rel = "icon", type = "image/png", href = "images/logo_icon.png"))
+                            ),
                    
                    # ----------------------------------
                    # tab panel 2 - Neighborhood Browser
@@ -61,14 +55,13 @@ shinyUI(navbarPage(title = "Protecta",
                             includeHTML("about.html"),
                             shinyjs::useShinyjs(),
                             tags$head(
-                                tags$link(rel = "stylesheet", 
-                                          type = "text/css", 
-                                          href = "plugins/carousel.css"),
-                                tags$script(src = "plugins/holder.js")
-                            ),
+                                tags$link(rel = "stylesheet", type = "text/css", href = "plugins/carousel.css"),
+                                tags$script(src = "plugins/holder.js")),
                             tags$style(type="text/css",
                                        ".shiny-output-error { visibility: hidden; }",
-                                       ".shiny-output-error:before { visibility: hidden; }"
+                                       ".shiny-output-error:before { visibility: hidden; }",
+                                       ".featurette-heading { margin-top: 0px;}",
+                                       ".featurette-divider {margin-top: 50px; margin-bottom : 50px;}"
                             )
                    )
                    
