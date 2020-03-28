@@ -1,24 +1,26 @@
-<!-- Carousel
-is a slideshow for cycling through a series of content, built with CSS 3D transforms and a bit of JavaScript. It works with a series of images, text, or custom markup. It also includes support for previous/next controls and indicators.
-================================================================================== -->
+<!-- Carousel is a slideshow for cycling through a series of content -->
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- carousel-indicators 
-  these are the little dots at the bottom of each slide, which indicates how many slides there are in the carousel, and which slide the user is currently    viewing -->
+  
+  <!-- add the little dots at the bottom of slides; indicate how many slides, and which slide the user is currently viewing  -->
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
     <li data-target="#myCarousel" data-slide-to="1"></li>
     <li data-target="#myCarousel" data-slide-to="2"></li>
     <li data-target="#myCarousel" data-slide-to="3"></li>
   </ol>
+  
+  <!-- add slides with photos and text to the carousel -->
   <div class="carousel-inner">
-    <!-- carousel-inner
-    add slides to the carousel -->
     <div class="item active">
       <img src="images/bg1.jpg" alt="1">
       <div class="container">
         <div class="carousel-caption">
-          <h1 class="fit-head">What are the protection trends?</h1>
-          <p class="fit-text">Use the interactive map to identify trends of protection concerns, at district level, from the protection monitoring system.</p>
+          <h1 class="fit-head">
+            What are the protection trends?
+          </h1>
+          <p class="fit-text">
+            Use the interactive map to identify trends of protection concerns, at district level, from the protection monitoring syste.
+          </p>
           <p>
             <a class="btn btn-lg btn-primary" onclick="$('li:eq(1) a').tab('show');" role="button">Protection monitoring &raquo;</a>
           </p>
@@ -29,9 +31,13 @@ is a slideshow for cycling through a series of content, built with CSS 3D transf
       <img src="images/bg2.jpg" alt="2">
       <div class="container">
         <div class="carousel-caption">
-          <h1 class="fit-head">How disability-inclusive are we?</h1>
-          <p class="fit-text">What is the evidence from protection programming that community engagement activities are inclusive of persons with
-          difficulties in seeing, hearing, walking, selfcare, and mental abilities?</p>
+          <h1 class="fit-head">
+            How disability-inclusive are we?
+          </h1>
+          <p class="fit-text">
+            What is the evidence from protection programming that community engagement activities are inclusive of persons with
+            difficulties in seeing, hearing, walking, selfcare, and mental abilities?
+          </p>
           <a class="btn btn-lg btn-primary" onclick="$('li:eq(2) a').tab('show');" role="button">Disability inclusion &raquo;</a>
           <!-- 
           <p>
@@ -50,8 +56,12 @@ is a slideshow for cycling through a series of content, built with CSS 3D transf
       <img src="images/bg4.jpg" alt="3">
       <div class="container">
         <div class="carousel-caption">
-          <h1 class="fit-head">Sexual exploitation &amp; abuse</h1>
-          <p class="fit-text">It is our mandate to stop and prevent sexual exploitation and abuse from happening during our humanitarian interventions.</p>
+          <h1 class="fit-head">
+            Sexual exploitation &amp; abuse
+          </h1>
+          <p class="fit-text">
+            It is our mandate to stop and prevent sexual exploitation and abuse from happening during our humanitarian interventions.
+          </p>
           <p>
             <a class="btn btn-lg btn-primary" onclick="$('li:eq(1) a').tab('show');" role="button">PSEA in interventions &raquo;</a>
           </p>
@@ -62,8 +72,12 @@ is a slideshow for cycling through a series of content, built with CSS 3D transf
       <img src="images/bg2.jpg" alt="4">
       <div class="container">
         <div class="carousel-caption">
-          <h1 class="fit-head">How are minority groups represented?</h1>
-          <p class="fit-text">What data do we have on minority groups in our humanitarian interventions?</p>
+          <h1 class="fit-head">
+            How are minority groups represented?
+          </h1>
+          <p class="fit-text">
+            What data do we have on minority groups in our humanitarian interventions?
+          </p>
           <a class="btn btn-lg btn-primary" onclick="$('li:eq(2) a').tab('show');" role="button">Minority inclusion &raquo;</a>
           <!-- 
           <p>
@@ -82,7 +96,7 @@ is a slideshow for cycling through a series of content, built with CSS 3D transf
   <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
   <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 </div>
-<!-- /.carousel -->
+<!-- /END .carousel -->
 
 <!-- add four columns of text below the carousel -->
 <div class="container marketing">
@@ -95,38 +109,38 @@ is a slideshow for cycling through a series of content, built with CSS 3D transf
   -->
   <div class="row app-links">
     <div class="col-md-3">
-      <img src="images/novice-01.png" width="50%" alt="novice">
+      <img src="images/novice-01.png" width="50%" alt="protection monitoring">
       <h2>Protection monitoring</h2>
       <p>
-      What is the evidence from protection programming that community engagement activities are inclusive?
+      What are the most often reported protection concerns from communities?
       </p>
-      <a class="btn btn-primary" onclick="$('li:eq(1) a').tab('show');" role="button">Check out trends &raquo;</a>
-    </div><!-- /END col-md-3 -->
+      <a class="btn btn-primary" onclick="$('li:eq(1) a').tab('show');" role="button">What are the trends? &raquo;</a>
+    </div>
     <div class="col-md-3">
-      <img src="images/veteran-01.png" width="50%" alt="veteran">
+      <img src="images/veteran-01.png" width="50%" alt="disability inclusion">
       <h2>Disabilty inclusion</h2>
       <p>
-      What is the evidence from protection programming that community engagement activities are inclusive?
+      What is the evidence from protection monitoring that community engagement activities are inclusive?
       </p>
-      <a class="btn btn-primary" onclick="$('li:eq(1) a').tab('show');" role="button">Disability inclusive KIs &raquo;</a>
-    </div><!-- /END.col-md-3 -->
+      <a class="btn btn-primary" onclick="$('li:eq(1) a').tab('show');" role="button">How inclusive is PMS? &raquo;</a>
+    </div>
     <div class="col-md-3">
       <img src="images/evaluator-01.png" width="50%" alt="evaluator">
       <h2>Sexual exploitation</h2>
       <p>
-      What is the evidence from protection programming that community engagement activities are inclusive?
+      Is sexual exploitation and abuse (SEA) happening in communities during humanitarian assistance?
       </p>
-      <a class="btn btn-primary" onclick="$('li:eq(3) a').tab('show');" role="button">PSEA Issues &amp; responses &raquo;</a>
+      <a class="btn btn-primary" onclick="$('li:eq(3) a').tab('show');" role="button">PSEA &amp; responses &raquo;</a>
     </div> <!-- /END.col-md-3 -->
     <div class="col-md-3">
       <img src="images/evaluator-01.png" width="50%" alt="evaluator">
       <h2>Minority groups</h2>
       <p>
-      What is the evidence from protection programming that community engagement activities are inclusive?
+      Who is a minority group in Somalia? What data exists from the protection monitoring system?
       </p>
       <a class="btn btn-primary" onclick="$('li:eq(3) a').tab('show');" role="button">Minority group concerns &raquo;</a>
-  </div> <!-- /END col-md-3 -->
-  </div> <!-- /END "row app-links"-->
+  </div> 
+  </div> 
 
 
   <!-- START THE FEATURETTES -->
@@ -170,20 +184,24 @@ is a slideshow for cycling through a series of content, built with CSS 3D transf
     </div>
     <div class="col-md-7">
       <h2 class="featurette-heading">
-        We <i class="fa fa-heart" style="color:#bf2604;"></i> Data &amp; R.<br><span class="text-muted">We really, really do</span>
+        We <i class="fa fa-heart" style="color:#bf2604;"></i> data decisions.<br><span class="text-muted">We really, really do</span>
       </h2>
     <p class="lead">
-      IM teams aggregate data from different systems and analyze billions of data points so that as a decision maker you don&rsquo;t have to! IM teams
-      aggregate data from different systems and analyze billions of data points.aggregate data from different systems and analyze billions of data points
+      It is true that protection data is extremely sensitive to be shared in its raw form. Equally true is the fact that we need to make programmatic decisions 
+      based on evidence. With this understanding, we have built tools using R, so that 
+      protection IM teams are able to extract non-person identiable data points using API calls and aggregate dataframes from different systems and analyze 
+      so that as a decision maker you don&rsquo;t have to! 
       <a data-toggle="collapse" data-parent="#accordionTwo" href="#collapseTwo">Read more&hellip;</a></p>
       <div class="panel-group transparent-panel-group" id="accordionTwo">
         <div class="panel panel-default">
           <div id="collapseTwo" class="panel-collapse collapse">
             <div class="panel-body text-left">
-              <p>Most program managers still prefer to use Microsoft Excel to analyze data and make decisions. In protection programming, much of 
-              incident-based data is highly confidential and cannot be shared without informed consent and a data protection policy detailing the scope. 
-              The Somalia protection monitoring system however is not an incident-based system but a community recall of occurrence of specific 
-              protection concerns. It aggregates these responses into a <em>%</em> and shows <em>trends</em>. There are different sections:
+              <p>Most program managers still prefer to use Microsoft Excel to analyze data and make decisions. This is alright and is similar to driving down
+              Mombasa Road in Nairobi
+              and you see this guy with his horse-carriage competing with sleeky mercedes benz traffic. Didn&rsquo;t someone tell him that horses have been
+              decommissioned? To us in information management,
+              Excel is the guy with his horses in a motorised transport environment. R is a mercedes, bentley or whatever sleek thing you drive these days. We
+              deliberately use R for the following reasons:
               </p>
               <ul>
                 <li><em>Trends</em> show how a community recalls the occurrence of protection concerns over time</li>
